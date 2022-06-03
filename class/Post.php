@@ -217,7 +217,7 @@ class Post extends \XoopsObject
                 $file_size = \number_format($file_size / 1024, 2) . ' KB';
                 if ($GLOBALS['xoopsModuleConfig']['media_allowed']
                     && \in_array(mb_strtolower($file_extension), $image_extensions)) {
-                    $post_attachment .= '<br><img src="' . $icon_filetype . '" alt="' . $filetype . '" ><strong>&nbsp; ' . $att['nameDisplay'] . '</strong> <small>(' . $file_size . ')</small>';
+                    $post_attachment .= '<br><img src="' . $icon_filetype . '" alt="' . $filetype . '" ><strong>&nbsp; ' . $att['name_display'] . '</strong> <small>(' . $file_size . ')</small>';
                     $post_attachment .= '<br>' . \newbbAttachmentImage($att['name_saved']);
                     $isDisplayed     = true;
                 } elseif (empty($GLOBALS['xoopsModuleConfig']['show_userattach'])) {
